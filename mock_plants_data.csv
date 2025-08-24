@@ -1,0 +1,52 @@
+name,price,categories,inStock,description
+Monstera Deliciosa,₹2299.50,"Indoor,Large,Air Purifying",true,A stunning tropical plant with iconic split leaves that brings a jungle vibe to any space.
+Jade Plant,₹949.50,"Succulent,Indoor,Small,Low Light",true,Lucky jade plant with thick glossy leaves. Perfect for beginners and brings good fortune.
+Snake Plant,₹1649.50,"Indoor,Low Light,Air Purifying,Pet Safe",false,Virtually indestructible plant with striking upright leaves. Perfect for low-light spaces.
+Golden Pothos,₹1249.50,"Indoor,Hanging,Low Light,Air Purifying",true,Beautiful trailing plant with heart-shaped leaves. Great for hanging baskets or shelves.
+Fiddle Leaf Fig,₹4499.50,"Indoor,Large",true,Statement plant with large violin-shaped leaves. A stunning centerpiece for any room.
+Peace Lily,₹1499.50,"Indoor,Flowering,Air Purifying,Low Light",true,Elegant plant with glossy leaves and beautiful white flowers. Excellent air purifier.
+Aloe Vera,₹799.50,"Succulent,Indoor,Small,Pet Safe",true,Medicinal succulent with soothing gel. Perfect for kitchen windowsills and first aid.
+Spider Plant,₹999.50,"Indoor,Hanging,Air Purifying,Pet Safe",true,Classic hanging plant that produces baby spiderettes. Great for beginners.
+ZZ Plant,₹1749.50,"Indoor,Low Light,Pet Safe",true,Ultra-low maintenance plant with glossy dark leaves. Perfect for dark corners.
+Chinese Evergreen,₹1399.50,"Indoor,Low Light,Air Purifying",true,Colorful foliage plant that thrives in low light conditions.
+Boston Fern,₹1149.50,"Indoor,Hanging,Air Purifying",false,Classic fern with feathery fronds. Perfect for humid bathrooms.
+Ponytail Palm,₹1949.50,"Indoor,Small,Pet Safe",true,Unique succulent with long curly leaves. Resembles a ponytail hairstyle.
+Bird of Paradise,₹3799.50,"Indoor,Large,Flowering",true,Exotic plant with large banana-like leaves. Can produce stunning orange flowers.
+Calathea Orbifolia,₹2149.50,"Indoor,Low Light",true,Stunning foliage with silver stripes. Known for its prayer plant movement.
+String of Pearls,₹849.50,"Succulent,Hanging,Small",true,Unique trailing succulent with round bead-like leaves.
+Philodendron Brasil,₹1449.50,"Indoor,Hanging,Air Purifying",true,Colorful heart-shaped leaves with yellow variegation.
+Rubber Plant,₹2499.50,"Indoor,Large,Air Purifying",true,Classic indoor tree with large glossy leaves. Great air purifier.
+Cactus Mix,₹649.50,"Succulent,Indoor,Small,Low Light",true,Assorted small cacti perfect for windowsills and desks.
+English Ivy,₹749.50,"Indoor,Hanging,Air Purifying",true,Classic trailing vine. Excellent for hanging baskets and air purification.
+Bamboo Palm,₹1849.50,"Indoor,Large,Air Purifying",true,Tall graceful palm that adds tropical elegance to any room.
+Croton,₹1599.50,"Indoor,Large",false,Colorful foliage plant with vibrant red orange and yellow leaves.
+Dracaena Marginata,₹1699.50,"Indoor,Large,Air Purifying",true,Tall slender plant with red-edged leaves. Perfect corner accent.
+Pilea Peperomioides,₹1299.50,"Indoor,Small",true,Popular pancake plant with round coin-shaped leaves.
+Aglaonema Silver Bay,₹1499.50,"Indoor,Low Light,Air Purifying",true,Beautiful variegated leaves with silver and green patterns.
+Hoya Carnosa,₹1099.50,"Indoor,Hanging,Flowering",true,Wax plant with thick leaves and clusters of star-shaped flowers.
+Schefflera Arboricola,₹2099.50,"Indoor,Large",true,Umbrella tree with glossy compound leaves. Great for large spaces.
+Tradescantia Zebrina,₹699.50,"Indoor,Hanging,Small",true,Colorful wandering jew with purple and silver striped leaves.
+Ficus Lyrata,₹4799.50,"Indoor,Large",true,Popular fiddle leaf fig with large violin-shaped leaves.
+Peperomia Obtusifolia,₹899.50,"Indoor,Small,Pet Safe",true,Baby rubber plant with thick glossy leaves. Pet-friendly option.
+Dieffenbachia,₹1349.50,"Indoor,Large",false,Colorful foliage with white and green patterns. Toxic to pets.
+Anthurium,₹1999.50,"Indoor,Flowering,Air Purifying",true,Exotic flowering plant with bright red spathes and glossy leaves.
+Bromeliad,₹1199.50,"Indoor,Flowering,Small",true,Tropical plant with colorful flower spikes. Low maintenance beauty.
+Kalanchoe,₹949.50,"Succulent,Indoor,Flowering,Small",true,Colorful flowering succulent. Blooms in winter months.
+Senecio Rowleyanus,₹1049.50,"Succulent,Hanging,Small",true,String of pearls with round bead-like leaves. Unique trailing plant.
+Epipremnum Aureum,₹1149.50,"Indoor,Hanging,Air Purifying",true,Golden pothos with yellow variegated leaves. Classic choice.
+Chlorophytum Comosum,₹849.50,"Indoor,Hanging,Air Purifying,Pet Safe",true,Spider plant with green and white striped leaves.
+Sansevieria Trifasciata,₹1549.50,"Indoor,Low Light,Air Purifying,Pet Safe",true,Snake plant with tall upright leaves. Virtually indestructible.
+Crassula Ovata,₹999.50,"Succulent,Indoor,Small,Pet Safe",true,Jade plant with thick glossy leaves. Brings good fortune.
+Monstera Adansonii,₹1799.50,"Indoor,Hanging",true,Swiss cheese vine with fenestrated leaves. Perfect for hanging.
+Philodendron Micans,₹1399.50,"Indoor,Hanging",true,Velvet leaf philodendron with soft fuzzy leaves.
+Calathea Medallion,₹1649.50,"Indoor,Low Light",true,Stunning round leaves with intricate patterns. Prayer plant family.
+Pachira Aquatica,₹2249.50,"Indoor,Large",true,Money tree with braided trunk and palm-like leaves.
+Dracaena Fragrans,₹1899.50,"Indoor,Large,Air Purifying",true,Corn plant with tall cane-like stems and broad leaves.
+Ficus Elastica,₹2649.50,"Indoor,Large,Air Purifying",true,Rubber plant with large glossy burgundy leaves.
+Begonia Rex,₹1249.50,"Indoor,Small",true,Colorful foliage begonia with intricate leaf patterns.
+Peperomia Caperata,₹799.50,"Indoor,Small",true,Ripple peperomia with textured heart-shaped leaves.
+Alocasia Polly,₹2349.50,"Indoor,Large",false,Elephant ear with dramatic arrow-shaped leaves.
+Syngonium Podophyllum,₹1349.50,"Indoor,Hanging",true,Arrowhead vine with arrow-shaped leaves. Easy to grow.
+Zamioculcas Zamiifolia,₹2049.50,"Indoor,Low Light,Pet Safe",true,ZZ plant with glossy compound leaves. Ultra-low maintenance.
+Philodendron Scandens,₹1199.50,"Indoor,Hanging,Air Purifying",true,Heartleaf philodendron with classic heart-shaped leaves.
+Spathiphyllum,₹1599.50,"Indoor,Flowering,Air Purifying,Low Light",true,Peace lily with elegant white flowers and glossy leaves.
