@@ -1,0 +1,372 @@
+{
+  "info": {
+    "name": "Plant Pantry API",
+    "description": "Complete API collection for the Plant Pantry application",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000/api",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/health",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Check if the API is running"
+      },
+      "response": []
+    },
+    {
+      "name": "Plants",
+      "item": [
+        {
+          "name": "Get All Plants",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants"
+              ]
+            },
+            "description": "Get all plants without any filters"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Plants with Search",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants?search=monstera",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "monstera",
+                  "description": "Search term for plant name or description"
+                }
+              ]
+            },
+            "description": "Get plants filtered by search term"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Plants by Category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants?category=Indoor",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants"
+              ],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "Indoor",
+                  "description": "Filter by plant category"
+                }
+              ]
+            },
+            "description": "Get plants filtered by category"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Plants in Stock",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants?inStock=true",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants"
+              ],
+              "query": [
+                {
+                  "key": "inStock",
+                  "value": "true",
+                  "description": "Filter by stock availability"
+                }
+              ]
+            },
+            "description": "Get only plants that are in stock"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Plants with Sorting",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants?sort=price&order=desc",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants"
+              ],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "price",
+                  "description": "Sort field (name, price, createdAt, updatedAt)"
+                },
+                {
+                  "key": "order",
+                  "value": "desc",
+                  "description": "Sort order (asc or desc)"
+                }
+              ]
+            },
+            "description": "Get plants sorted by price in descending order"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Plants with Multiple Filters",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants?search=plant&category=Indoor&inStock=true&sort=name&order=asc",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "plant",
+                  "description": "Search term"
+                },
+                {
+                  "key": "category",
+                  "value": "Indoor",
+                  "description": "Category filter"
+                },
+                {
+                  "key": "inStock",
+                  "value": "true",
+                  "description": "Stock filter"
+                },
+                {
+                  "key": "sort",
+                  "value": "name",
+                  "description": "Sort field"
+                },
+                {
+                  "key": "order",
+                  "value": "asc",
+                  "description": "Sort order"
+                }
+              ]
+            },
+            "description": "Get plants with multiple filters applied"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Plant",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants/{{plant_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants",
+                "{{plant_id}}"
+              ],
+              "variable": [
+                {
+                  "key": "plant_id",
+                  "value": "64f8a1b2c3d4e5f6a7b8c9d0",
+                  "description": "Plant ID to retrieve"
+                }
+              ]
+            },
+            "description": "Get a single plant by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Create New Plant",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Monstera Deliciosa\",\n  \"price\": 45.99,\n  \"categories\": [\"Indoor\", \"Large\", \"Air Purifying\"],\n  \"description\": \"A beautiful tropical plant with distinctive split leaves\",\n  \"inStock\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/plants",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants"
+              ]
+            },
+            "description": "Create a new plant"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Plant",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Updated Monstera Deliciosa\",\n  \"price\": 49.99,\n  \"categories\": [\"Indoor\", \"Large\", \"Air Purifying\"],\n  \"description\": \"Updated description for the Monstera plant\",\n  \"inStock\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/plants/{{plant_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants",
+                "{{plant_id}}"
+              ],
+              "variable": [
+                {
+                  "key": "plant_id",
+                  "value": "64f8a1b2c3d4e5f6a7b8c9d0",
+                  "description": "Plant ID to update"
+                }
+              ]
+            },
+            "description": "Update an existing plant"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Plant",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants/{{plant_id}}",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants",
+                "{{plant_id}}"
+              ],
+              "variable": [
+                {
+                  "key": "plant_id",
+                  "value": "64f8a1b2c3d4e5f6a7b8c9d0",
+                  "description": "Plant ID to delete"
+                }
+              ]
+            },
+            "description": "Delete a plant by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/plants/categories/list",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "plants",
+                "categories",
+                "list"
+              ]
+            },
+            "description": "Get all available plant categories"
+          },
+          "response": []
+        }
+      ],
+      "description": "All plant-related endpoints"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
