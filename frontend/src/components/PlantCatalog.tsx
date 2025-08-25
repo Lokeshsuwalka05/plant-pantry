@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
-import { type Plant, type PlantFormData } from '../types/plant';
+import { useState } from 'react';
+import { type PlantFormData } from '../types/plant';
 import { PlantCard } from './PlantCard';
 import { SearchBar } from './SearchBar';
 import { CategoryFilter } from './CategoryFilter';
@@ -8,7 +8,6 @@ import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Plus, Grid, List, Loader2 } from 'lucide-react';
 import { usePlants, useCreatePlant } from '../hooks/usePlants';
-import { apiService } from '../services/api';
 
 export const PlantCatalog = () => {
   const [searchTerm, setSearchTerm] = useState('');
