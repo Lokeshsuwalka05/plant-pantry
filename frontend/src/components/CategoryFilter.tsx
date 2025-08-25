@@ -8,7 +8,7 @@ interface CategoryFilterProps {
 }
 
 export const CategoryFilter = ({ value, onChange }: CategoryFilterProps) => {
-  const { data: categories = [], isLoading } = useCategories();
+  const { data: categories = []} = useCategories();
 
   return (
     <div className="flex items-center gap-2">
