@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { type PlantFormData } from '../types/plant';
 import { PlantCard } from './PlantCard';
 import { SearchBar } from './SearchBar';
@@ -8,6 +8,7 @@ import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Plus, Grid, List, Loader2 } from 'lucide-react';
 import { usePlants, useCreatePlant } from '../hooks/usePlants';
+import { toast } from "sonner"
 
 export const PlantCatalog = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -36,9 +37,18 @@ export const PlantCatalog = () => {
       // Error is handled by the mutation hook
     }
   };
-
-
-
+  const showRenderWaitToast = () => {
+    toast.custom(() => (
+      <div className="bg-red-600 text-white px-4 py-2 rounded-md shadow-lg">
+        ⚠️ You are on the free tier of Render. Please wait for some time!
+      </div>
+    ), { duration: 5000});
+  };
+  useEffect(() => {
+    if (isLoading) {
+      showRenderWaitToast();
+    }
+  }, [isLoading]);
   return (
     <div className="min-h-screen bg-gradient-nature">
       <div className="container mx-auto px-4 py-8">
@@ -117,8 +127,6 @@ export const PlantCatalog = () => {
             {selectedCategory !== 'all' && ` in ${selectedCategory}`}
           </p>
         </div>
-
-
 
         {/* Loading State */}
         {isLoading && (
