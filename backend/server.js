@@ -26,10 +26,10 @@ mongoose.connect(process.env.MONGODB_URI)
   });
 
 // Routes
-app.use('/api/plants', plantRoutes);
+app.use('/plants', plantRoutes);
 
 // Health check endpoint
-app.get('/api/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.json({
     success: true,
     message: 'Plant Pantry API is running',
